@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - วิทยาลัยเทคนิคนางรอง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    
+    <nav class="bg-maroon text-white sticky top-0 z-50 border-b-4 border-gold shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="home.jpg" class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full p-1">
+                    <div>
+                        <span class="text-lg md:text-xl font-bold block leading-tight">วิทยาลัยเทคนิคนางรอง</span>
+                        <span class="text-xs text-gold font-light">Nangrong Technical College</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex space-x-1">
+                    <a href="index.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition bg-gold text-gray-900 font-bold">Home</a>
+<a href="about.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">About</a>
+<a href="service.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Service</a>
+<a href="detail.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Detail</a>
+<a href="contact.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Contact</a>
+<a href="building.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Building</a>
+<a href="location.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Location</a>
+<a href="department.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Department</a>
+<a href="facilities.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Facilities</a>
+<a href="gallery.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Gallery</a>
+
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-gold focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2 border-t border-white/10 grid grid-cols-2 gap-2 text-sm">
+                <a href="index.html" class="px-3 py-2 rounded bg-gold text-gray-900 font-bold">Home (หน้าแรก)</a>
+<a href="about.html" class="px-3 py-2 rounded hover:bg-white/10">About (ประวัติวิทยาลัย)</a>
+<a href="service.html" class="px-3 py-2 rounded hover:bg-white/10">Service (หมวดหมู่สถานที่)</a>
+<a href="detail.html" class="px-3 py-2 rounded hover:bg-white/10">Detail (รายละเอียดสถานที่)</a>
+<a href="contact.html" class="px-3 py-2 rounded hover:bg-white/10">Contact (ติดต่อวิทยาลัย)</a>
+<a href="building.html" class="px-3 py-2 rounded hover:bg-white/10">Building (ทำเนียบอาคาร)</a>
+<a href="location.html" class="px-3 py-2 rounded hover:bg-white/10">Location (แผนที่ภายใน)</a>
+<a href="department.html" class="px-3 py-2 rounded hover:bg-white/10">Department (แผนกวิชา)</a>
+<a href="facilities.html" class="px-3 py-2 rounded hover:bg-white/10">Facilities (สิ่งอำนวยความสะดวก)</a>
+<a href="gallery.html" class="px-3 py-2 rounded hover:bg-white/10">Gallery (ภาพกิจกรรม)</a>
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-6xl">
+        
+<div class="text-center mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold text-maroon mb-3">ยินดีต้อนรับสู่ระบบสารสนเทศ วิทยาลัยเทคนิคนางรอง</h1>
+    <p class="text-gray-600">มุ่งมั่นจัดการศึกษาวิชาชีพ ผลิตกำลังคนอาชีวศึกษาคุณธรรม นำทักษะสู่สังคม</p>
+    <div class="w-24 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="about.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-red-100 text-maroon rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-university"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">About (ประวัติวิทยาลัย)</h3>
+        <p class="text-sm text-gray-600">วิสัยทัศน์ พันธกิจ และประวัติความเป็นมาของวิทยาลัย</p>
+    </a>
+
+    <a href="service.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-amber-100 text-gold rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Service (หมวดหมู่สถานที่)</h3>
+        <p class="text-sm text-gray-600">หมวดหมู่สถานที่บริการวิชาการและจุดอำนวยความสะดวก</p>
+    </a>
+
+    <a href="detail.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-red-100 text-maroon rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Detail (รายละเอียดสถานที่)</h3>
+        <p class="text-sm text-gray-600">ข้อปฏิบัติและรายละเอียดเวลาทำการของสถานที่ต่าง ๆ</p>
+    </a>
+
+    <a href="contact.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-amber-100 text-gold rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-address-book"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Contact (ติดต่อวิทยาลัย)</h3>
+        <p class="text-sm text-gray-600">เบอร์โทรศัพท์ ช่องทางโซเชียลมีเดีย และแบบฟอร์มติดต่อ</p>
+    </a>
+
+    <a href="building.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-red-100 text-maroon rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-building"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Building (ทำเนียบอาคาร)</h3>
+        <p class="text-sm text-gray-600">รายชื่ออาคารเรียน โรงปฏิบัติงาน และอาคารอำนวยการ</p>
+    </a>
+
+    <a href="location.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-amber-100 text-gold rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-map-location-dot"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Location (แผนที่ภายในวิทยาลัย)</h3>
+        <p class="text-sm text-gray-600">แผนผังอาคารสถานที่และ Google Maps นำทาง</p>
+    </a>
+
+    <a href="department.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-red-100 text-maroon rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Department (แผนกวิชา)</h3>
+        <p class="text-sm text-gray-600">แผนกวิชาคอมพิวเตอร์ ช่างอุตสาหกรรม และบริหารธุรกิจ</p>
+    </a>
+
+    <a href="facilities.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center">
+        <div class="w-16 h-16 bg-amber-100 text-gold rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-concierge-bell"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Facilities (สิ่งอำนวยความสะดวก)</h3>
+        <p class="text-sm text-gray-600">ระบบ Wi-Fi, โรงอาหาร, ลานจอดรถ และศูนย์วิทยบริการ</p>
+    </a>
+
+    <a href="gallery.html" class="card-hover bg-white p-6 rounded-2xl border border-gray-100 shadow-md text-center md:col-span-2 lg:col-span-1">
+        <div class="w-16 h-16 bg-red-100 text-maroon rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+            <i class="fa-solid fa-images"></i>
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">Gallery (ภาพกิจกรรมและสถานที่)</h3>
+        <p class="text-sm text-gray-600">รวบรวมภาพบรรยากาศเปิดภาคเรียนและกิจกรรมวิทยาลัย</p>
+    </a>
+</div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p>© 2026 วิทยาลัยเทคนิคนางรอง. สงวนลิขสิทธิ์ทุกประการ.</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="fixed inset-0 bg-black/80 hidden z-50 items-center justify-center p-4" onclick="closeModal()">
+        <img id="modalImg" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

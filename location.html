@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนที่ภายในวิทยาลัย - วิทยาลัยเทคนิคนางรอง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    
+    <nav class="bg-maroon text-white sticky top-0 z-50 border-b-4 border-gold shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="home.jpg" class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full p-1">
+                    <div>
+                        <span class="text-lg md:text-xl font-bold block leading-tight">วิทยาลัยเทคนิคนางรอง</span>
+                        <span class="text-xs text-gold font-light">Nangrong Technical College</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex space-x-1">
+                    <a href="index.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Home</a>
+<a href="about.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">About</a>
+<a href="service.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Service</a>
+<a href="detail.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Detail</a>
+<a href="contact.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Contact</a>
+<a href="building.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Building</a>
+<a href="location.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition bg-gold text-gray-900 font-bold">Location</a>
+<a href="department.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Department</a>
+<a href="facilities.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Facilities</a>
+<a href="gallery.html" class="px-2.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition hover:bg-white/10">Gallery</a>
+
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-gold focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2 border-t border-white/10 grid grid-cols-2 gap-2 text-sm">
+                <a href="index.html" class="px-3 py-2 rounded hover:bg-white/10">Home (หน้าแรก)</a>
+<a href="about.html" class="px-3 py-2 rounded hover:bg-white/10">About (ประวัติวิทยาลัย)</a>
+<a href="service.html" class="px-3 py-2 rounded hover:bg-white/10">Service (หมวดหมู่สถานที่)</a>
+<a href="detail.html" class="px-3 py-2 rounded hover:bg-white/10">Detail (รายละเอียดสถานที่)</a>
+<a href="contact.html" class="px-3 py-2 rounded hover:bg-white/10">Contact (ติดต่อวิทยาลัย)</a>
+<a href="building.html" class="px-3 py-2 rounded hover:bg-white/10">Building (ทำเนียบอาคาร)</a>
+<a href="location.html" class="px-3 py-2 rounded bg-gold text-gray-900 font-bold">Location (แผนที่ภายใน)</a>
+<a href="department.html" class="px-3 py-2 rounded hover:bg-white/10">Department (แผนกวิชา)</a>
+<a href="facilities.html" class="px-3 py-2 rounded hover:bg-white/10">Facilities (สิ่งอำนวยความสะดวก)</a>
+<a href="gallery.html" class="px-3 py-2 rounded hover:bg-white/10">Gallery (ภาพกิจกรรม)</a>
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-6xl">
+        
+<div class="bg-white rounded-2xl shadow-md p-6 md:p-8">
+    <h2 class="text-2xl font-bold text-maroon border-b pb-3 mb-6 flex items-center">
+        <i class="fa-solid fa-map-location-dot text-gold mr-3"></i> 7. Location : แผนที่และผังอาคารสถานที่
+    </h2>
+
+    <div class="mb-8">
+        <h3 class="font-bold text-gray-800 mb-3"><i class="fa-solid fa-sitemap text-maroon mr-2"></i>ผังอาคารสถานที่ภายในวิทยาลัย</h3>
+        <div class="rounded-xl overflow-hidden border shadow-sm">
+            <img src="plan.jpg" alt="แผนผังวิทยาลัยเทคนิคนางรอง" class="w-full h-auto cursor-pointer hover:opacity-90 transition" onclick="openModal(this.src)" onerror="this.src='https://via.placeholder.com/800x400?text=Campus+Map'">
+        </div>
+    </div>
+
+    <div>
+        <h3 class="font-bold text-gray-800 mb-3"><i class="fa-solid fa-location-pin text-maroon mr-2"></i>พิกัด Google Maps</h3>
+        <div class="w-full h-80 rounded-xl overflow-hidden border shadow-inner">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.455243179261!2d102.7667!3d14.8833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3119f4d2572a1cd9%3A0x6a29e46a74b1cb6a!2z4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LiZ4Li04LiE4LiZ4Liy4LiH4Lij4Lit4LiH!5e0!3m2!1sth!2sth!4v1700000000000!5m2!1sth!2sth" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p>© 2026 วิทยาลัยเทคนิคนางรอง. สงวนลิขสิทธิ์ทุกประการ.</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="fixed inset-0 bg-black/80 hidden z-50 items-center justify-center p-4" onclick="closeModal()">
+        <img id="modalImg" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

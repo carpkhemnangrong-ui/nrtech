@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --maroon-primary: #800000;
+    --maroon-dark: #6b0000;
+    --gold-primary: #f59e0b;
+    --gold-light: #fbbf24;
+    --bg-light: #f8fafc;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: var(--bg-light);
+    color: #334155;
+}
+
+.bg-maroon {
+    background-color: var(--maroon-primary);
+}
+
+.bg-maroon-dark {
+    background-color: var(--maroon-dark);
+}
+
+.text-maroon {
+    color: var(--maroon-primary);
+}
+
+.bg-gold {
+    background-color: var(--gold-primary);
+}
+
+.text-gold {
+    color: var(--gold-primary);
+}
+
+.border-gold {
+    border-color: var(--gold-primary);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
